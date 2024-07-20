@@ -21,7 +21,9 @@ function App() {
     <div className="table_container pt-2">
       <div className="title text-center pb-4 pt-2">
         <h1 className="text-5xl">Smart Finance</h1>
-        <h3 className="text-xl -mt-3">Most Active Stocks</h3>
+        <h3 className="text-base font-medium -mt-3">
+          Regular DataTable Without Freeze Column
+        </h3>
       </div>
       <div className="overflow-x-auto">
         <div className="p-3 bg-gray-300 w-fit mx-auto">
