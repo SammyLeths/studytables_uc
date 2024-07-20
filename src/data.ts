@@ -1,4 +1,21 @@
-export const studyOneData = [
+interface StudyData {
+  symbol: string;
+  name: string;
+  price: number;
+  change: number;
+  percent_change: number;
+  volume: number;
+  average_volume: number;
+  market_cap: number;
+  pe_ratio: number;
+  week_range: {
+    position: number;
+    lower: number;
+    upper: number;
+  };
+}
+
+export const studyOneData: StudyData[] = [
   {
     symbol: "NVDA",
     name: "NVIDIA Corporation",
@@ -10,7 +27,7 @@ export const studyOneData = [
     market_cap: 2.973 * 1000000000000,
     pe_ratio: 71.1,
     week_range: {
-      position: 14,
+      position: 50,
       lower: 39.23,
       upper: 132.84,
     },
@@ -26,7 +43,7 @@ export const studyOneData = [
     market_cap: 3.153 * 1000000000000,
     pe_ratio: 31.98,
     week_range: {
-      position: 20,
+      position: 65,
       lower: 164.08,
       upper: 220.2,
     },
@@ -42,7 +59,7 @@ export const studyOneData = [
     market_cap: 541.334 * 1000000000,
     pe_ratio: 43.41,
     week_range: {
-      position: 6,
+      position: 20,
       lower: 138.8,
       upper: 299.29,
     },
@@ -58,7 +75,7 @@ export const studyOneData = [
     market_cap: 257.166 * 1000000000,
     pe_ratio: 230.59,
     week_range: {
-      position: 12,
+      position: 35,
       lower: 93.12,
       upper: 227.3,
     },
@@ -74,7 +91,7 @@ export const studyOneData = [
     market_cap: 304.212 * 1000000000,
     pe_ratio: 13.41,
     week_range: {
-      position: 6,
+      position: 15,
       lower: 24.96,
       upper: 40.19,
     },
@@ -90,7 +107,7 @@ export const studyOneData = [
     market_cap: 158.835 * 1000000000,
     pe_ratio: 0,
     week_range: {
-      position: 5,
+      position: 10,
       lower: 25.2,
       upper: 39.87,
     },
@@ -106,7 +123,7 @@ export const studyOneData = [
     market_cap: 1.939 * 1000000000000,
     pe_ratio: 52.2,
     week_range: {
-      position: 20,
+      position: 80,
       lower: 118.35,
       upper: 191.7,
     },
@@ -122,7 +139,7 @@ export const studyOneData = [
     market_cap: 147.916 * 1000000000,
     pe_ratio: 19.67,
     week_range: {
-      position: 16,
+      position: 60,
       lower: 47.15,
       upper: 80.47,
     },
@@ -138,7 +155,7 @@ export const studyOneData = [
     market_cap: 2.185 * 1000000000,
     pe_ratio: 27.05,
     week_range: {
-      position: 20,
+      position: 85,
       lower: 115.35,
       upper: 180.41,
     },
@@ -154,7 +171,7 @@ export const studyOneData = [
     market_cap: 131.92 * 1000000000,
     pe_ratio: 31.95,
     week_range: {
-      position: 5,
+      position: 6,
       lower: 29.73,
       upper: 51.28,
     },
@@ -170,7 +187,7 @@ export const studyOneData = [
     market_cap: 127.514 * 1000000000,
     pe_ratio: 9.56,
     week_range: {
-      position: 15,
+      position: 75,
       lower: 13.43,
       upper: 18.45,
     },
@@ -186,7 +203,7 @@ export const studyOneData = [
     market_cap: 200.394 * 1000000000,
     pe_ratio: 11.97,
     week_range: {
-      position: 18,
+      position: 65,
       lower: 38.39,
       upper: 62.55,
     },
@@ -202,7 +219,7 @@ export const studyOneData = [
     market_cap: 235.339 * 1000000000,
     pe_ratio: 47.41,
     week_range: {
-      position: 12,
+      position: 40,
       lower: 433.97,
       upper: 638.25,
     },
@@ -218,7 +235,7 @@ export const studyOneData = [
     market_cap: 489.46 * 1000000000,
     pe_ratio: 13.37,
     week_range: {
-      position: 14,
+      position: 45,
       lower: 95.77,
       upper: 123.75,
     },
