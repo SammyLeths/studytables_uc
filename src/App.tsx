@@ -18,38 +18,40 @@ const headers = [
 
 function App() {
   return (
-    <div className="table_container">
+    <div className="table_container ">
       <div className="title text-center pb-4 pt-2">
         <h1 className="text-5xl">Smart Finance</h1>
         <h3 className="text-xl -mt-3">Most Active Stocks</h3>
       </div>
-      <div className="table_wrapper p-3 bg-gray-300 overflow-x-auto">
-        <table className="table-auto border border-slate-200">
-          <thead className="text-left">
-            <tr className="bg-sky-200 h-10">
-              <th className="px-3 border border-slate-200">
-                <input
-                  type="checkbox"
-                  className="form-checkbox rounded border-slate-300"
-                  aria-label="Select All"
-                />
-              </th>
-              {headers.map((data, index) => (
-                <th
-                  key={index}
-                  className="pl-3 pr-8 text-nowrap border border-slate-200"
-                >
-                  {data}
+      <div className="overflow-x-auto">
+        <div className="p-3 bg-gray-300 w-fit mx-auto">
+          <table className="table-auto border border-slate-200">
+            <thead className="text-left">
+              <tr className="bg-sky-200 h-10">
+                <th className="px-3 border border-slate-200">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox rounded border-slate-300"
+                    aria-label="Select All"
+                  />
                 </th>
+                {headers.map((data, index) => (
+                  <th
+                    key={index}
+                    className="pl-3 pr-8 text-nowrap border border-slate-200"
+                  >
+                    {data}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="text-left">
+              {studyOneData.map((data, index) => (
+                <TableRow data={data} key={data.symbol + index} />
               ))}
-            </tr>
-          </thead>
-          <tbody className="text-left">
-            {studyOneData.map((data, index) => (
-              <TableRow data={data} key={data.symbol + index} />
-            ))}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
