@@ -18,7 +18,7 @@ const headers = [
 
 function App() {
   return (
-    <div className="table_container ">
+    <div className="table_container pt-2">
       <div className="title text-center pb-4 pt-2">
         <h1 className="text-5xl">Smart Finance</h1>
         <h3 className="text-xl -mt-3">Most Active Stocks</h3>
