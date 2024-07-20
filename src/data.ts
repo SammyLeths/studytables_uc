@@ -9,7 +9,7 @@ interface StudyData {
   market_cap: number;
   pe_ratio: number;
   week_range: {
-    position: number;
+    position: string;
     lower: number;
     upper: number;
   };
@@ -27,7 +27,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 2.973 * 1000000000000,
     pe_ratio: 71.1,
     week_range: {
-      position: 50,
+      position: "ml-[50px]",
       lower: 39.23,
       upper: 132.84,
     },
@@ -43,7 +43,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 3.153 * 1000000000000,
     pe_ratio: 31.98,
     week_range: {
-      position: 65,
+      position: "ml-[65px]",
       lower: 164.08,
       upper: 220.2,
     },
@@ -59,7 +59,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 541.334 * 1000000000,
     pe_ratio: 43.41,
     week_range: {
-      position: 20,
+      position: "ml-[20px]",
       lower: 138.8,
       upper: 299.29,
     },
@@ -75,7 +75,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 257.166 * 1000000000,
     pe_ratio: 230.59,
     week_range: {
-      position: 35,
+      position: "ml-[35px]",
       lower: 93.12,
       upper: 227.3,
     },
@@ -91,7 +91,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 304.212 * 1000000000,
     pe_ratio: 13.41,
     week_range: {
-      position: 15,
+      position: "ml-[15px]",
       lower: 24.96,
       upper: 40.19,
     },
@@ -107,7 +107,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 158.835 * 1000000000,
     pe_ratio: 0,
     week_range: {
-      position: 10,
+      position: "ml-[10px]",
       lower: 25.2,
       upper: 39.87,
     },
@@ -123,7 +123,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 1.939 * 1000000000000,
     pe_ratio: 52.2,
     week_range: {
-      position: 80,
+      position: "ml-[80px]",
       lower: 118.35,
       upper: 191.7,
     },
@@ -139,7 +139,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 147.916 * 1000000000,
     pe_ratio: 19.67,
     week_range: {
-      position: 60,
+      position: "ml-[60px]",
       lower: 47.15,
       upper: 80.47,
     },
@@ -155,7 +155,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 2.185 * 1000000000,
     pe_ratio: 27.05,
     week_range: {
-      position: 85,
+      position: "ml-[85px]",
       lower: 115.35,
       upper: 180.41,
     },
@@ -171,7 +171,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 131.92 * 1000000000,
     pe_ratio: 31.95,
     week_range: {
-      position: 6,
+      position: "ml-[6px]",
       lower: 29.73,
       upper: 51.28,
     },
@@ -187,7 +187,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 127.514 * 1000000000,
     pe_ratio: 9.56,
     week_range: {
-      position: 75,
+      position: "ml-[75px]",
       lower: 13.43,
       upper: 18.45,
     },
@@ -203,7 +203,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 200.394 * 1000000000,
     pe_ratio: 11.97,
     week_range: {
-      position: 65,
+      position: "ml-[65px]",
       lower: 38.39,
       upper: 62.55,
     },
@@ -219,7 +219,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 235.339 * 1000000000,
     pe_ratio: 47.41,
     week_range: {
-      position: 40,
+      position: "ml-[40px]",
       lower: 433.97,
       upper: 638.25,
     },
@@ -235,7 +235,7 @@ export const studyOneData: StudyData[] = [
     market_cap: 489.46 * 1000000000,
     pe_ratio: 13.37,
     week_range: {
-      position: 45,
+      position: "ml-[45px]",
       lower: 95.77,
       upper: 123.75,
     },

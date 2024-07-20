@@ -2,7 +2,7 @@ import { MapPinIcon } from "@heroicons/react/16/solid";
 
 interface RangeCellProps {
   week_range: {
-    position: number;
+    position: string;
     lower: number;
     upper: number;
   };
@@ -22,7 +22,7 @@ const RangeCell = ({ week_range, isActive, toggleActive }: RangeCellProps) => {
         <div className="range">
           <div className="position border-b-2 border-gray-500">
             <MapPinIcon
-              className={`ml-[${week_range.position}px] size-4 text-blue-500 border-b-2 border-blue-500 pb-[0.1rem] -mb-[2px]`}
+              className={`${week_range.position} size-4 text-blue-500 border-b-2 border-blue-500 pb-[0.1rem] -mb-[2px]`}
             />
           </div>
           <div className="values flex justify-between">

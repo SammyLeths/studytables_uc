@@ -14,7 +14,7 @@ interface TableRowProps {
     market_cap: number;
     pe_ratio: number;
     week_range: {
-      position: number;
+      position: string;
       lower: number;
       upper: number;
     };
