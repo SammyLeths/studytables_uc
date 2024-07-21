@@ -25,9 +25,9 @@ function App() {
           Regular DataTable Without Freeze Column
         </h3>
       </div>
-      <div className="overflow-x-auto">
-        <div className="p-3 bg-gray-300 w-fit mx-auto">
-          <table className="table-auto border border-slate-200">
+      <div className="p-3 bg-gray-300 overflow-hidden">
+        <div className="mx-auto overflow-x-auto">
+          <table className="min-w-full table-auto border border-slate-200">
             <thead className="text-left">
               <tr className="bg-sky-200 h-10">
                 <th className="px-3 border border-slate-200">
